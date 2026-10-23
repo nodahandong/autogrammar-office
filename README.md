@@ -45,7 +45,9 @@ The file to use is **manifest-word-excel.xml**. One file covers both apps.
 3. Do the same for Excel: `~/Library/Containers/com.microsoft.Excel/Data/Documents/wef`
 4. Restart Word/Excel. Go to **Insert → Add-ins → My Add-ins** (or **Home → Add-ins**) and choose **AutoGrammar** from the developer add-ins.
 
-**On Windows:**
+**On Windows (easy way):** in the unzipped `office-addin` folder, double-click **Install-Word-Excel.bat** and click **Yes** when Windows asks for permission. Then follow the 4 steps it shows. If it can't share the folder (some company PCs block this), use the manual steps below or Word/Excel on office.com.
+
+**On Windows (manual):**
 1. Make a folder, for example `C:\AutoGrammar`, and copy **manifest-word-excel.xml** into it.
 2. Right-click the folder → **Properties → Sharing → Share…** → **Share**. Note the network path it shows (like `\\YOUR-PC\AutoGrammar`).
 3. In Word: **File → Options → Trust Center → Trust Center Settings → Trusted Add-in Catalogs**. Paste the network path into *Catalog Url*, click **Add catalog**, tick **Show in Menu**, click **OK**, and restart Word.
