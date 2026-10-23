@@ -45,7 +45,7 @@ The file to use is **manifest-word-excel.xml**. One file covers both apps.
 3. Do the same for Excel: `~/Library/Containers/com.microsoft.Excel/Data/Documents/wef`
 4. Restart Word/Excel. Go to **Insert → Add-ins → My Add-ins** (or **Home → Add-ins**) and choose **AutoGrammar** from the developer add-ins.
 
-**On Windows (easy way):** in the unzipped `office-addin` folder, double-click **Install-Word-Excel.bat** and click **Yes** when Windows asks for permission. Then follow the 4 steps it shows. If it can't share the folder (some company PCs block this), use the manual steps below or Word/Excel on office.com.
+**On Windows (easy way, no admin needed):** in the unzipped `office-addin` folder, double-click **Install-Word-Excel.bat**. Then close all Word and Excel windows, open Word, and click **AutoGrammar** at the right end of the **Home** tab. If Word asks whether to trust or load the add-in, click **Yes**. To remove it later, run **Uninstall-Word-Excel.bat**.
 
 **On Windows (manual):**
 1. Make a folder, for example `C:\AutoGrammar`, and copy **manifest-word-excel.xml** into it.
