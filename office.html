@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AutoGrammar</title>
+<script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+<link rel="stylesheet" href="taskpane.css">
+</head>
+<body>
+  <h1><img src="assets/icon32.png" alt="" width="20" height="20"> AutoGrammar</h1>
+
+  <section>
+    <p class="hint" id="howto">Select text, then pick a style or a language to translate to.</p>
+    <div id="chips" class="chips"></div>
+    <select id="lang" class="lang" aria-label="Translate to"></select>
+    <div id="status" role="status"></div>
+    <button id="undo" hidden>↶ Undo</button>
+    <div class="meta" id="meta" hidden><span id="metaLabel">New version</span><button id="toggle" class="link">Show changes</button></div>
+    <div id="result" hidden></div>
+    <div class="row" id="resultActions" hidden>
+      <button id="replace" class="primary">Replace</button>
+      <button id="copy">Copy</button>
+    </div>
+  </section>
+
+  <details id="settings">
+    <summary>Settings (API key, model)</summary>
+    <p class="note"><b>Note:</b> ChatGPT Plus doesn't include the API. Get a key at
+      <a href="https://platform.openai.com/api-keys" target="_blank">platform.openai.com/api-keys</a> and add credit under Billing.</p>
+    <label for="apiKey">OpenAI API key</label>
+    <input id="apiKey" type="password" placeholder="sk-..." autocomplete="off" spellcheck="false">
+    <label for="model">Model</label>
+    <select id="model">
+      <option value="gpt-4.1-mini">gpt-4.1-mini (recommended)</option>
+      <option value="gpt-4.1-nano">gpt-4.1-nano (cheapest)</option>
+      <option value="gpt-4o-mini">gpt-4o-mini</option>
+      <option value="gpt-4.1">gpt-4.1 (higher quality)</option>
+      <option value="gpt-5-mini">gpt-5-mini (slower)</option>
+    </select>
+    <div class="row"><button id="save" class="primary">Save</button><span id="saveStatus"></span></div>
+  </details>
+
+<script src="prompts.js"></script>
+<script src="grammar.js"></script>
+<script src="office.js"></script>
+</body>
+</html>

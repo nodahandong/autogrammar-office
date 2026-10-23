@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AutoGrammar Translate</title>
+<script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+<link rel="stylesheet" href="taskpane.css">
+</head>
+<body>
+  <h1><img src="assets/icon32.png" alt="" width="20" height="20"> Translate email</h1>
+  <p class="hint">Translates this email so you can read it. The email is not changed.</p>
+  <div id="chips" class="chips"></div>
+  <select id="lang" class="lang" aria-label="Other languages"></select>
+  <div id="status" role="status"></div>
+  <div id="result" hidden></div>
+  <div class="row" id="resultActions" hidden><button id="copy">Copy</button></div>
+
+  <details id="settings">
+    <summary>Settings (API key)</summary>
+    <label for="apiKey">OpenAI API key</label>
+    <input id="apiKey" type="password" placeholder="sk-..." autocomplete="off" spellcheck="false">
+    <div class="row"><button id="save" class="primary">Save</button><span id="saveStatus"></span></div>
+  </details>
+
+<script src="prompts.js"></script>
+<script src="grammar.js"></script>
+<script src="read.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+[hidden] { display: none !important; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 14px; color: #1f2328; background: #fff; font: 14px/1.5 "Segoe UI", system-ui, -apple-system, sans-serif; }
+h1 { display: flex; align-items: center; gap: 8px; font-size: 18px; margin: 0 0 10px; }
+.hint { color: #57606a; font-size: 13px; margin: 0 0 10px; }
+.row { display: flex; gap: 8px; align-items: center; margin: 10px 0; flex-wrap: wrap; }
+button { padding: 8px 12px; border-radius: 6px; border: 1px solid #d0d7de; background: #fff; font: 600 13px/1.2 inherit; font-family: inherit; cursor: pointer; color: inherit; }
+button.primary { background: #10a37f; border-color: #10a37f; color: #fff; }
+button:disabled { opacity: .5; }
+select, input { width: 100%; padding: 7px 9px; border: 1px solid #d0d7de; border-radius: 6px; font: inherit; }
+.row select { width: auto; }
+label { display: block; font-weight: 600; margin: 10px 0 4px; }
+#status { margin: 8px 0; color: #57606a; }
+#status.ok { color: #116329; }
+#status.bad { color: #a40e26; }
+#result { white-space: pre-wrap; word-wrap: break-word; background: #f6f8fa; border-radius: 8px; padding: 10px; }
+del { background: #ffebe9; color: #a40e26; margin-right: 2px; }
+ins { background: #dafbe1; color: #116329; text-decoration: none; }
+details { margin-top: 18px; border-top: 1px solid #eaeef2; padding-top: 10px; }
+summary { cursor: pointer; font-weight: 600; }
+.note { background: #fff8c5; border: 1px solid #e6d58a; border-radius: 6px; padding: 8px; font-size: 13px; }
+a { color: #0969da; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; }
+.chip { font-weight: 600; font-size: 12.5px; padding: 7px 10px; border-radius: 999px; border: 1px solid #e2e8f0; background: #fff; color: #334155; }
+.chip:hover { border-color: #10b981; background: #f0fdf4; }
+.chip.on { background: #0f172a; border-color: #0f172a; color: #fff; }
+.meta { display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #64748b; margin: 6px 0; }
+.link { all: unset; cursor: pointer; color: #0369a1; font-weight: 600; font-size: 12.5px; }
+button.primary { background: linear-gradient(135deg, #10b981, #059669); border-color: #059669; }
+select.lang { width: 100%; margin: 0 0 8px; }
+.cell { padding: 6px 0; border-bottom: 1px solid #e2e8f0; }
+.cell:last-child { border-bottom: 0; }
+.addr { display: inline-block; min-width: 38px; margin-right: 8px; font-size: 11px; font-weight: 700; color: #64748b; background: #e2e8f0; border-radius: 4px; padding: 1px 5px; text-align: center; }
+#result { max-height: none; }
